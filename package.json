@@ -11,6 +11,7 @@
   "author": "Sidd Sridharan <sidd@sidd.com> (http://sidd.com)",
   "license": "MIT",
   "dependencies": {
+    "parse-torrent": "^5.7.0",
     "webtorrent": "^0.71.1"
   }
 }

@@ -18,11 +18,11 @@ SereneWebtorrentPlugin.prototype.getTorrents = function () {
   }
 }
 
-SereneWebtorrentPlugin.prototype.addTorrent = function () {
+SereneWebtorrentPlugin.prototype.addTorrent = function (torrent) {
   return {
     type: 'PROVIDER_TORRENTS_ADD',
     payload: {
-      promise: this._client.addTorrent()
+      promise: this._client.addTorrent(torrent)
     }
   }
 }
