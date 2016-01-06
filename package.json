@@ -1,0 +1,16 @@
+{
+  "name": "serene-webtorrent",
+  "version": "0.0.0",
+  "description": "webtorrent plugin & instance for serene",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "sidd/serene-webtorrent",
+  "keywords": [],
+  "author": "Sidd Sridharan <sidd@sidd.com> (http://sidd.com)",
+  "license": "MIT",
+  "dependencies": {
+    "webtorrent": "^0.71.1"
+  }
+}
