@@ -13,7 +13,7 @@ SereneWebtorrentPlugin.prototype.getTorrents = function () {
   return {
     type: 'PROVIDER_TORRENTS',
     payload: {
-      promise: this._client.getTorrents()
+      promise: this._client.getTorrents().catch(err => console.error(err))
     }
   }
 }
@@ -32,6 +32,24 @@ SereneWebtorrentPlugin.prototype.getStats = function () {
     type: 'PROVIDER_STATS',
     payload: {
       promise: Promise.resolve({})
+    }
+  }
+}
+
+SereneWebtorrentPlugin.prototype.getTorrentDetails = function (infohash) {
+  return {
+    type: 'PROVIDER_TORRENTS_DETAILS',
+    payload: {
+      promise: this._client.getTorrentDetails(infohash)
+    }
+  }
+}
+
+SereneWebtorrentPlugin.prototype.updateTorrentStatus = function (infohash, status) {
+  return {
+    type: 'PROVIDER_TORRENTS_UPDATE',
+    payload: {
+      promise: this._client.updateTorrentStatus(infohash, status)
     }
   }
 }
