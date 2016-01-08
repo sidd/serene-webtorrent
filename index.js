@@ -13,7 +13,7 @@ SereneWebtorrentPlugin.prototype.getTorrents = function () {
   return {
     type: 'PROVIDER_TORRENTS',
     payload: {
-      promise: this._client.getTorrents().catch(err => console.error(err))
+      promise: this._client.getTorrents()
     }
   }
 }
