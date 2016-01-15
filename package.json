@@ -13,5 +13,8 @@
   "dependencies": {
     "parse-torrent": "^5.7.0",
     "webtorrent": "^0.71.1"
+  },
+  "devDependencies": {
+    "zuul": "^3.9.0"
   }
 }
